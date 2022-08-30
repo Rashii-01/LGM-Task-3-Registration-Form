@@ -53,7 +53,7 @@ const getBaseData = () => {
 }
 
 const setData = (nam, gend, emai, we, sk, im) => {
-    let temp = `<tr class="tabRow"><td><div class="desc"><p id="Sname">${nam}</p><p id="Sgender">${gend}</p><p id="Semail">${emai}</p><p id="Sweb"><a href=${"https://" + we} target="_blank" >${we}</a></p><p id="Sskils">${sk}</p> </div></td><td><div><img src=${im} alt="" onerror="this.onerror=null;this.src='${gend == "Male" ? './Images/images.png' : './Images/girls.png'}';" class="profImg"></div></td></tr>`
+    let temp = `<tr class="tabRow"><td><div class="desc"><p id="Sname">${nam}</p><p id="Sgender">${gend}</p><p id="Semail">${emai}</p><p id="Sweb"><a href=${"https://" + we} target="_blank" >${we}</a></p><p id="Sskils">${sk}</p> </div></td><td><div><img src=${im} alt="" onerror="this.onerror=null;this.src='${gend == "Male" ? './images/images.png' : './images/girls.png'}';" class="profImg"></div></td></tr>`
 
     table.innerHTML += temp;
     enrStudents.style.display = "block";
